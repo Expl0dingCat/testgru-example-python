@@ -150,3 +150,56 @@ It can be triggered by PR or existing code files.
 ![image](https://github.com/user-attachments/assets/10e5d5d9-b73b-4fba-a2e4-6e11e045a4ff)
 
 ![image](https://github.com/user-attachments/assets/d327e627-d341-4ccf-af59-e47bf5195a98)
+
+# Python Example Project
+
+This is a sample Python project that demonstrates various programming concepts and implementations. It's designed to be a good candidate for testing AI-powered unit test generation.
+
+## Project Structure
+
+The project contains the following modules:
+
+- `calculator.py`: A calculator class with basic and advanced mathematical operations
+- `string_utils.py`: String processing utilities with various text manipulation functions
+- `data_structures.py`: Custom data structure implementations (Priority Queue)
+- `main.py`: Demo program showing usage of all modules
+
+## Features
+
+### Calculator
+- Basic arithmetic operations
+- Series calculations
+- Compound interest calculation
+- Operation history tracking
+
+### String Processor
+- Word reversal
+- Word frequency counting
+- Palindrome detection
+- Text truncation
+
+### Custom Priority Queue
+- Priority-based item management
+- Configurable maximum size
+- Standard queue operations (push, pop, peek)
+- Queue status checking
+
+## Running the Project
+
+1. No external dependencies are required - the project uses only Python standard library
+
+2. Run the main demo:
+   ```bash
+   python src/main.py
+   ```
+
+## Testing Opportunities
+
+This project provides various testing scenarios:
+
+- Edge cases (empty inputs, invalid inputs)
+- Mathematical precision
+- Data structure operations
+- String manipulations
+- State management
+- Error handling
