@@ -3,6 +3,10 @@ from string_utils import StringProcessor
 from data_structures import CustomPriorityQueue
 
 def demonstrate_calculator():
+    """
+    Demonstrates the functionality of the Calculator class with various operations.
+    Showcases basic arithmetic, series calculations, and financial functions.
+    """
     print("\n=== Calculator Demo ===")
     calc = Calculator(precision=2)
     
@@ -23,6 +27,11 @@ def demonstrate_calculator():
     print(f"Compound interest for $1000 at 5% for 3 years = ${result}")
 
 def demonstrate_string_processor():
+    """
+    Demonstrates the functionality of the StringProcessor class.
+    Shows text manipulation capabilities including word reversal, 
+    word frequency counting, and palindrome detection.
+    """
     print("\n=== String Processor Demo ===")
     processor = StringProcessor()
     
@@ -45,16 +54,20 @@ def demonstrate_string_processor():
     print(f"\nPalindromes in '{text}': {result}")
 
 def demonstrate_priority_queue():
+    """
+    Demonstrates the functionality of the CustomPriorityQueue class.
+    Shows how items are added with priorities and retrieved in priority order.
+    """
     print("\n=== Priority Queue Demo ===")
     pq = CustomPriorityQueue(max_size=5)
     
     # Add items with priorities
     items = [
-        ("Task 1", 3),
-        ("Task 2", 1),
-        ("Task 3", 4),
-        ("Task 4", 2),
-        ("Task 5", 5)
+        ("Task 1", 3),  # Medium priority
+        ("Task 2", 1),  # Lowest priority
+        ("Task 3", 4),  # High priority
+        ("Task 4", 2),  # Low priority
+        ("Task 5", 5)   # Highest priority
     ]
     
     print("Adding items to priority queue:")
@@ -69,7 +82,12 @@ def demonstrate_priority_queue():
             print(f"  Processing: {item[0]} (Priority: {item[1]})")
 
 def main():
+    """
+    Main entry point for the demo application.
+    Runs all demonstration functions to showcase various utility classes.
+    """
     print("Welcome to the Python Examples Demo!")
+    print("This program demonstrates several utility classes and their functionality.")
     
     demonstrate_calculator()
     demonstrate_string_processor()
