@@ -5,7 +5,7 @@ import random
 import time
 
 # this is a comment 
-
+# this is another comment
 def demonstrate_calculator():
     """
     Demonstrates the functionality of the Calculator class with various operations.
