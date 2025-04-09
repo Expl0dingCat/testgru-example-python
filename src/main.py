@@ -4,6 +4,8 @@ from data_structures import CustomPriorityQueue
 import random
 import time
 
+# this is a comment 
+
 def demonstrate_calculator():
     """
     Demonstrates the functionality of the Calculator class with various operations.
