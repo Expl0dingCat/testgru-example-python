@@ -1,6 +1,8 @@
 from typing import List, Union
 import math
 
+# a new comment
+
 class Calculator:
     def __init__(self, precision: int = 2):
         self.precision = precision
