@@ -25,6 +25,30 @@ def test_add_with_precision():
     assert result == 3.58
     assert calc.get_history() == [3.58]
 
+def test_subtract_positive_numbers():
+    calc = Calculator()
+    result = calc.subtract(5.0, 3.0)
+    assert result == 2.0
+    assert calc.get_history() == [2.0]
+
+def test_subtract_negative_numbers():
+    calc = Calculator()
+    result = calc.subtract(-5.0, -3.0)
+    assert result == -2.0
+    assert calc.get_history() == [-2.0]
+
+def test_subtract_with_precision():
+    calc = Calculator(precision=3)
+    result = calc.subtract(5.5555, 3.3333)
+    assert result == 2.222
+    assert calc.get_history() == [2.222]
+
+def test_subtract_result_in_history():
+    calc = Calculator()
+    calc.subtract(10.0, 4.0)
+    calc.subtract(8.0, 3.0)
+    assert calc.get_history() == [6.0, 5.0]
+
 def test_divide_positive_numbers():
     calc = Calculator()
     result = calc.divide(10.0, 2.0)
