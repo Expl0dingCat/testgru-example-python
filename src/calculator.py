@@ -12,6 +12,12 @@ class Calculator:
         self._history.append(result)
         return result
 
+    def subtract(self, a: float, b: float) -> float:
+        """Subtract two numbers and store the result in history."""
+        result = round(a - b, self.precision)
+        self._history.append(result)
+        return result
+
     def divide(self, a: float, b: float) -> float:
         """Divide two numbers with error handling."""
         if b == 0:

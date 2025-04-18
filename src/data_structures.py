@@ -11,10 +11,14 @@ class PriorityQueueItem:
         return self.priority < other.priority
 
 class CustomPriorityQueue:
-    """A priority queue implementation that maintains items with priorities."""
+    """A priority queue implementation that maintains items with priorities.
+    Uses heapq internally for efficiency.
+    """
     
     def __init__(self, max_size: Optional[int] = None):
+        # Internal list to store PriorityQueueItem objects
         self._items: List[PriorityQueueItem] = []
+        # Optional maximum size limit for the queue
         self._max_size = max_size
         
     def push(self, item: Any, priority: int) -> bool:
