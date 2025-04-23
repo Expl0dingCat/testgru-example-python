@@ -18,6 +18,12 @@ class Calculator:
         self._history.append(result)
         return result
 
+    def multiply(self, a: float, b: float) -> float:
+        """Multiply two numbers and store the result in history."""
+        result = round(a * b, self.precision)
+        self._history.append(result)
+        return result
+
     def divide(self, a: float, b: float) -> float:
         """Divide two numbers with error handling."""
         if b == 0:
@@ -37,6 +43,10 @@ class Calculator:
     def get_history(self) -> List[float]:
         """Return the history of calculations."""
         return self._history.copy()
+
+    def clear_history(self) -> None:
+        """Clear the calculation history."""
+        self._history = []
 
     def calculate_compound_interest(self, principal: float, rate: float, time: float) -> float:
         """

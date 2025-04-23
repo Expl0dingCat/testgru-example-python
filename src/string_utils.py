@@ -7,7 +7,9 @@ class StringProcessor:
         """Reverse each word in a text while maintaining word order."""
         if not text:
             return ""
-        return text
+        words = text.split()
+        reversed_words = [word[::-1] for word in words]
+        return " ".join(reversed_words)
 
     @staticmethod
     def count_word_frequency(text: str) -> Dict[str, int]:
